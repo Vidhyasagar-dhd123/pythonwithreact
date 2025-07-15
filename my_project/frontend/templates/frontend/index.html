@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Python React</title>
+    {% load static %}
+    <!--cdn to jquery a 3.5.1 and 2.0.2 from ajax.google and cdnjs.cloudflare-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--link for google fonts api for roboto-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!--link for static css/index.css-->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+</head>
+<body>
+    <div id="main">
+        <div id="app"></div>
+    </div>
+    <!--import static frontend/main/js-->
+    <script src="{% static 'frontend/main.js' %}"></script>
+</body>
+</html>
