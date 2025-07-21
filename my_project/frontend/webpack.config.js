@@ -19,6 +19,10 @@ module.exports = {
                     }
                 }
             },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'], // If you're importing CSS
+      },
         ]
     },
     optimization: {

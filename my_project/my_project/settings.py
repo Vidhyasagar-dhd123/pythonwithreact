@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "channels",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -68,8 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "my_project.wsgi.application"
-
+ASGI_APPLICATION = "my_project.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
